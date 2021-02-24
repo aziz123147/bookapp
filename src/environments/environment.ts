@@ -5,15 +5,17 @@
 export const environment = {
   production: false,
   firebaseConfig : {
-    apiKey: "AIzaSyAwcrgdlfZbdJGbo9bje6eCIONxnl8YtC8",
-    authDomain: "mpwin2-firebase.firebaseapp.com",
-    projectId: "mpwin2-firebase",
-    storageBucket: "mpwin2-firebase.appspot.com",
-    messagingSenderId: "616988238089",
-    appId: "1:616988238089:web:e5e3977f8f9fe4360573d8",
-    measurementId: "G-CZ7NL65SGQ"
+    apiKey: "AIzaSyC-KJm3ZagPzKch3lYPAoa4T3lw2vpcBTo",
+    authDomain: "films-fd5a4.firebaseapp.com",
+    projectId: "films-fd5a4",
+    storageBucket: "films-fd5a4.appspot.com",
+    messagingSenderId: "737248463452",
+    appId: "1:737248463452:web:1a24dcba5f87a33864b499",
+    measurementId: "G-FZ6BRD7RJW"
   }
 };
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file

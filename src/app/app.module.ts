@@ -5,17 +5,25 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
-
+import { SigninComponent } from './components/authentification/signin/signin.component';
+import { SignupComponent } from './components/authentification/signup/signup.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AngularFireAuthModule } from '@angular/fire/auth'
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SigninComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule ,
     HttpClientModule ,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
-
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
