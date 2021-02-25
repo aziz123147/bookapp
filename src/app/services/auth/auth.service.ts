@@ -18,19 +18,21 @@ export class AuthService {
     return this.afAuth.createUserWithEmailAndPassword (signUpForm.email , signUpForm.password)
     .then (( result ) =>
     {
-      alert ( "aziz");
       this.SetUserData ( result.user , signUpForm.userName);
     }).catch( (error) => { window.alert ( error.message)});
    }
 
    SetUserData (user , userName)
    {
-     const userRef: AngularFirestoreDocument <any> = this.afs.doc ( `users/${user.uid}`);
+
+     const userRef: AngularFirestoreDocument<any> = this.afs.doc('users/${user.uid}');
+
      const userData: User = {
-       id : user.id ,
+       id : user.uid ,
        email : user.email ,
        userName : userName,
      };
+
      return userRef.set( userData , { merge:true});
 
    }
