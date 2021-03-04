@@ -9,7 +9,8 @@ import { SigninComponent } from './components/authentification/signin/signin.com
 import { SignupComponent } from './components/authentification/signup/signup.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AngularFireAuthModule } from '@angular/fire/auth'
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { UserProfileModule } from './components/user-profine/user-profile.module'
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth'
     AngularFirestoreModule,
     AngularFireAuthModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    UserProfileModule
   ],
   providers: [],
   bootstrap: [AppComponent]
