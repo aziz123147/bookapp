@@ -11,7 +11,10 @@ const routes : Routes=[
   { path:'signup' , component: SignupComponent} ,
   { path:'user-profile' , canActivate :[AuthGuard] ,loadChildren:() => import ('./components/user-profine/user-profile.module')
    .then (mod => mod.UserProfileModule)
-  }
+  } ,
+  { path:'book', canActivate : [AuthGuard] ,
+  loadChildren : () => import ( './components/book/book.module').then (m => m.BookModule)}
+
 ]
 
 @NgModule({

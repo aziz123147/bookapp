@@ -10,12 +10,17 @@ import { SignupComponent } from './components/authentification/signup/signup.com
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import { UserProfileModule } from './components/user-profine/user-profile.module'
+import { UserProfileModule } from './components/user-profine/user-profile.module';
+import { HeaderComponent } from './components/header/header.component';
+import { BookModule } from './components/book/book.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule ,
@@ -25,7 +30,9 @@ import { UserProfileModule } from './components/user-profine/user-profile.module
     AngularFireAuthModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    UserProfileModule
+    UserProfileModule,
+    BookModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link"  style="color:blue;" [routerLink]="'user-profile'">Profil</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link"  style="color:blue;" [routerLink]="'book'">Livres</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link"  style="color:blue;cursor:pointer" (click)="signOut()">Deconnection</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
