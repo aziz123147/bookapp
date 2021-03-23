@@ -7,7 +7,7 @@ import { AuthService } from './services/auth/auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor( public authService : AuthService ) {}
   title = 'tdfirebase1';
-  constructor(public authSercvice : AuthService) { }
-}
 
+}

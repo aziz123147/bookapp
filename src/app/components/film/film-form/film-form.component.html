@@ -1,0 +1,32 @@
+<div  class = " row container " >
+  <div  class = " col-sm-6 col-sm-offset-2 " >
+    <h2> Enregistrer un nouveau Film</h2>
+  <form  [formGroup] ="formFilm" (ngSubmit) = "onSaveBook()" >
+
+   <div  class = " form-group " >
+      <label  for = "titre" > Titre </label>
+      <input  type="text" id = "title" class = "form-control" formControlName="titre" >
+      <span  *ngIf = "formControls.titre.touched && formControls.titre.invalid" class = "error" >
+      Il faut un titre pour le film  </span>
+      </div>
+      <div  class = " form-group " >
+        <label  for = "titre"> Autheur</label>
+        <input  type="text" id = "auteur" class = "form-control" formControlName="auteur" >
+        <span  *ngIf = "formControls.auteur.touched && formControls.auteur.invalid" class = "error" >
+        Il faut un autheur pour le film </span>
+        </div>
+
+
+
+      <div  class = " form-group " >
+        <label  for="synopsis" > Synopsis </label>
+        <textarea  id="synopsis" class ="form-control" formControlName="synopsis" > </textarea >
+
+        </div>
+
+      <button  type="submit" class="btn btn-danger"  [disabled] = "formFilm.invalid" > Enregistrer </button>
+
+    </form>
+
+  </div>
+</div>

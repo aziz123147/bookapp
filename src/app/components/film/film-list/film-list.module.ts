@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { BookListRoutingModule } from './book-list-routing.module';
+import { FilmListRoutingModule } from './film-list-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    BookListRoutingModule
+    FilmListRoutingModule
   ]
 })
-export class BookListModule { }
+export class FilmListModule { }

@@ -12,8 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { UserProfileModule } from './components/user-profine/user-profile.module';
 import { HeaderComponent } from './components/header/header.component';
-import { BookModule } from './components/book/book.module';
-
+import { FilmFormModule } from './components/film/film-form/film-form.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,7 @@ import { BookModule } from './components/book/book.module';
     AppRoutingModule,
     ReactiveFormsModule,
     UserProfileModule,
-    BookModule,
+    FilmFormModule
 
   ],
   providers: [],

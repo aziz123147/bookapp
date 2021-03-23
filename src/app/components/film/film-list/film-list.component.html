@@ -1,0 +1,28 @@
+
+
+<div  class = " row container " syle = " margin: 1em " >
+<div  class = " col-sm-6 col-sm-offset-2 " > </div>
+<div class="col-sm-offset-6 col-sm-6" style="margin-bottom: 1em;">
+  <button  type ="button" [routerLink] = "['/film/film-form/add']" class = "btn btn-danger" > Creer un nouveau livre </button>
+</div>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Titre</th>
+      <th scope="col">Auteur</th>
+      <th scope="col">Synopsis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let film of films">
+
+      <th>{{film.titre}}</th>
+      <th>{{film.auteur}}</th>
+      <th>{{film.synopsis}}</th>
+
+    </tr>
+  </tbody>
+
+</table>
