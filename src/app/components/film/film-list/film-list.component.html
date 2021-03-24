@@ -13,15 +13,23 @@
       <th scope="col">Titre</th>
       <th scope="col">Auteur</th>
       <th scope="col">Synopsis</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let film of films">
 
-      <th>{{film.titre}}</th>
-      <th>{{film.auteur}}</th>
-      <th>{{film.synopsis}}</th>
+      <td>{{film.titre}}</td>
+      <td>{{film.auteur}}</td>
+      <td>{{film.synopsis}}</td>
+      <td>
+          <button type="button" [routerLink]="['/film/film-form/edit', film.id]"
+          class="bten btn-info">Modifier un film</button>
+          
+          <button type="button" (click)="deleteFilm(film.id)" style="margin-left: 1em;"
+          class="bten btn-danger">Supprimer le film</button>
 
+      </td>
     </tr>
   </tbody>
 

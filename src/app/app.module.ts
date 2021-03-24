@@ -3,6 +3,7 @@ import { AngularFireModule } from '@angular/fire';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import {AngularFireStorageModule} from '@angular/fire/storage' ;
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 import { SigninComponent } from './components/authentification/signin/signin.component';
@@ -30,7 +31,8 @@ import { FilmFormModule } from './components/film/film-form/film-form.module';
     AppRoutingModule,
     ReactiveFormsModule,
     UserProfileModule,
-    FilmFormModule
+    FilmFormModule,
+    AngularFireStorageModule
 
   ],
   providers: [],

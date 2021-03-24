@@ -1,6 +1,11 @@
 <div  class = " row container " >
   <div  class = " col-sm-6 col-sm-offset-2 " >
-    <h2> Enregistrer un nouveau Film</h2>
+
+    <ng-container [ngSwitch]="action">
+      <h2 *ngSwitchCase="'add'"> Enregistrer un nouveau Film</h2>
+      <h2 *ngSwitchCase="'edit'">Modifier un  Film</h2>
+    </ng-container>
+
   <form  [formGroup] ="formFilm" (ngSubmit) = "onSaveBook()" >
 
    <div  class = " form-group " >
@@ -23,10 +28,26 @@
         <textarea  id="synopsis" class ="form-control" formControlName="synopsis" > </textarea >
 
         </div>
+        <input type="file" #fileinput hidden (change)="detectFiles($event)"
+        class="form-control" accept="image/*">
 
-      <button  type="submit" class="btn btn-danger"  [disabled] = "formFilm.invalid" > Enregistrer </button>
 
-    </form>
+
+
+
+        <img *ngIf="percentage===100 || currentUploadFile!==null"
+        style="max-height: 250px; max-width: 476px ; margin-bottom: 5px; object-fit: contain;"
+        [src]="currentUploadFile" class="img-fluid" alt="request image">
+         <br>
+        <div *ngIf="percentage!==null && percentage!==100" style="margin:1em 0" class="progress mt-2">
+            <div class="progressbar prograss-bar-info" role="progressbar" attr.aria.valuenow="{{percentage}}" aria-valuemin="0" area-valuemaw="100" [ngStyle]="{width:percentage+ '%' }">{{percentage}}</div>
+
+        </div>
+        <button class="btn btn-info" (click)="fileinput.click()" type="button">Ajouter Photo</button>
+
+        <button  type="submit" class="btn btn-danger"  [disabled] = "formFilm.invalid" > Enregistrer </button>
+
+      </form>
 
   </div>
 </div>

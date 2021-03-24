@@ -13,7 +13,7 @@ export class FilmListComponent implements OnInit {
   constructor(private filmSercvice:BookService) { }
 
   ngOnInit(): void {
-this.filmSercvice.getBooks().pipe(
+this.filmSercvice.getFilms().pipe(
   tap(films => {
     this.films= films ;
     console.log ( 'films' , films)
@@ -21,5 +21,10 @@ this.filmSercvice.getBooks().pipe(
 ).subscribe();
 
   }
+
+deleteFilm(filmId)
+{
+  this.filmSercvice.deleteFilm(filmId);
+}
 
 }
