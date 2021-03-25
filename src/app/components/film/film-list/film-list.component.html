@@ -7,7 +7,7 @@
 </div>
 
 
-<table class="table">
+<table class="table"  *ngIf ="!isLoading ; else waitTemplate">
   <thead>
     <tr>
       <th scope="col">Titre</th>
@@ -25,7 +25,7 @@
       <td>
           <button type="button" [routerLink]="['/film/film-form/edit', film.id]"
           class="bten btn-info">Modifier un film</button>
-          
+
           <button type="button" (click)="deleteFilm(film.id)" style="margin-left: 1em;"
           class="bten btn-danger">Supprimer le film</button>
 
@@ -34,3 +34,7 @@
   </tbody>
 
 </table>
+
+<ng-template #waitTemplate >
+  <span> Chargement En cours </span>
+</ng-template>

@@ -1,10 +1,13 @@
 <div  class = " row container " >
   <div  class = " col-sm-6 col-sm-offset-2 " >
 
-    <ng-container [ngSwitch]="action">
+    <!--<ng-container [ngSwitch]="action">
       <h2 *ngSwitchCase="'add'"> Enregistrer un nouveau Film</h2>
       <h2 *ngSwitchCase="'edit'">Modifier un  Film</h2>
-    </ng-container>
+    </ng-container>-->
+
+    <ng-container *ngTemplateOutlet = "titreTemplate;
+     context: { titre : action ==='add' ? 'Enregistrer un nouveau livre' : 'Modifier un livre'}"></ng-container>
 
   <form  [formGroup] ="formFilm" (ngSubmit) = "onSaveBook()" >
 
@@ -51,3 +54,9 @@
 
   </div>
 </div>
+
+
+
+<ng-template #titreTemplate let-titre="titre">
+  <h3>{{ titre }}</h3>
+</ng-template>

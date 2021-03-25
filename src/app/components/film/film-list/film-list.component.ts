@@ -10,6 +10,7 @@ import { BookService } from 'src/app/services/book/book.service';
 })
 export class FilmListComponent implements OnInit {
   films : any[] ;
+  isLoading = true ;
   constructor(private filmSercvice:BookService) { }
 
   ngOnInit(): void {
@@ -17,6 +18,7 @@ this.filmSercvice.getFilms().pipe(
   tap(films => {
     this.films= films ;
     console.log ( 'films' , films)
+    this.isLoading = false;
   })
 ).subscribe();
 

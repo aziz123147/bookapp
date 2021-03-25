@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="9060865741312352449" datatype="html">
+        <source>Se connecter</source>
+          <target> Authentication film-apps </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/authentification/signin/signin.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description"> Titre Pour le composant Authetication</note>
+        <note priority="1" from="meaning">from title </note>
+      </trans-unit>
+      <trans-unit id="3014849925480713850" datatype="html">
+        <source> Email </source>
+        <target> Introduce your email : </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/authentification/signin/signin.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description" > Titre du champs email du composant Authetication</note>
+        <note priority="1" from="meaning">from champs email </note>
+      </trans-unit>
+      <trans-unit id="3612137519416309737" datatype="html">
+        <source> Il faut entrer un email</source>
+        <target> Introduce your  Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/authentification/signin/signin.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description"> Message d&apos;erreur du champs email du composant authtication =&gt; champs vide</note>
+        <note priority="1" from="meaning">from champs email  </note>
+      </trans-unit>
+      <trans-unit id="8868248062436868604" datatype="html">
+        <source> PassWord:</source>
+        <target> Introdude your password :</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/authentification/signin/signin.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description"> Titre du champs password du composant Authetication</note>
+        <note priority="1" from="meaning">from champs password </note>
+      </trans-unit>
+      <trans-unit id="7683311783200651474" datatype="html">
+        <source> Il faut entrer un mot de passe</source>
+        <target> Warning : You must intruce your password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/authentification/signin/signin.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description"> Message d&apos;erreur du champs password du composant authtication =&gt; Champs Vide</note>
+        <note priority="1" from="meaning">from champs password </note>
+      </trans-unit>
+      <trans-unit id="2920035052990079426" datatype="html">
+        <source>Le mot de passe doit contenir 6 caractéres</source>
+        <target> Warning : Your password must have 6 caracters</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/authentification/signin/signin.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description"> Message d&apos;erreur du champs password du composant authtication =&gt; Champs doit contenir 6 caracteres</note>
+        <note priority="1" from="meaning">from champs password </note>
+      </trans-unit>
+      <trans-unit id="8739273086810177919" datatype="html">
+        <source>Conexion </source>
+        <target> Connect with data system </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/authentification/signin/signin.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description"> boutton pour se connecter sur base systeme</note>
+        <note priority="1" from="meaning">from boutton connextion systeme </note>
+      </trans-unit>
+      <trans-unit id="7605740411841137205" datatype="html">
+        <source>ou</source>
+        <target> Or </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/authentification/signin/signin.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">Separateur d&apos;authentication email et gmail</note>
+        <note priority="1" from="meaning">from separateur de boutton </note>
+      </trans-unit>
+      <trans-unit id="1100171071162740211" datatype="html">
+        <source>Se Connecter avec Gmail</source>
+        <target> conect Via Gmail</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/authentification/signin/signin.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description"> boutton pour se connecter Gmail</note>
+        <note priority="1" from="meaning">from boutton connextion Gmail </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
+
+
+
+
+
