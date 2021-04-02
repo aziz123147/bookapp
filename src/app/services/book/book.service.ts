@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { AngularFireStorage } from '@angular/fire/storage';
 import { Router } from '@angular/router';
-import { resolve } from 'node:path';
 import { Observable, Subject } from 'rxjs';
 import { finalize, map } from 'rxjs/operators';
 import { Film } from 'src/app/models/film.model';

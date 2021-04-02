@@ -45,7 +45,7 @@ export class FilmFormComponent implements OnInit {
 
     this.initForm ();
     this.route.paramMap.pipe (
-      filter (p =>! p.has ('bookId')),
+      filter (p =>! p.has ('filmId')),
       tap (p => {
         this.action = p.get ('action') as FormAction;
         this.filmId = p.get('filmId');
@@ -111,7 +111,7 @@ detectFiles(event)
 
       this.filmService.downloadURL.pipe( takeUntil ( this.destroy$ ))
       .subscribe(currentFileUpload => {
-    
+
                                       this.currentUploadFile = currentFileUpload ;
 
                                                                     });

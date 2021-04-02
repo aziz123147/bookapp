@@ -14,6 +14,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { UserProfileModule } from './components/user-profine/user-profile.module';
 import { HeaderComponent } from './components/header/header.component';
 import { FilmFormModule } from './components/film/film-form/film-form.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FilmFormModule } from './components/film/film-form/film-form.module';
     ReactiveFormsModule,
     UserProfileModule,
     FilmFormModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
 
   ],
   providers: [],
